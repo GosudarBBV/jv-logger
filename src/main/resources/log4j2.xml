@@ -10,14 +10,16 @@
             </PatternLayout>
         </File>
     </Appenders>
+
     <Loggers>
         <Logger name="mate.academy" level="info" additivity="false">
             <AppenderRef ref="LogToFile"/>
-            <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="Console"/> <!-- виправлено -->
         </Logger>
+
         <Root level="error">
             <AppenderRef ref="LogToFile"/>
-            <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="Console"/> <!-- виправлено -->
         </Root>
     </Loggers>
 </Configuration>
