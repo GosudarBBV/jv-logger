@@ -14,12 +14,12 @@
     <Loggers>
         <Logger name="mate.academy" level="info" additivity="false">
             <AppenderRef ref="LogToFile"/>
-            <AppenderRef ref="Console"/> <!-- виправлено -->
+            <AppenderRef ref="Console"/>
         </Logger>
 
         <Root level="error">
             <AppenderRef ref="LogToFile"/>
-            <AppenderRef ref="Console"/> <!-- виправлено -->
+            <AppenderRef ref="Console"/>
         </Root>
     </Loggers>
 </Configuration>
